@@ -1,0 +1,9 @@
+var nthDay = 0;
+var currTime = '01/28/1987 09:45AM CET';
+var ssStatus = 0;
+var dawnPoint = 0;
+var twilPoint = 0;
+var maxPointWidth = 150;
+var seal1 = 0;
+var seal2 = 0;
+var seal3 = 0;
