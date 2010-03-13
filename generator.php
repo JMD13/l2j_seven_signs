@@ -28,7 +28,7 @@ $totalScore = $query['dawn_stone_score'] + $query['dusk_stone_score'] + $query['
 $dawnPoint = ($totalScore == 0) ? 0 : round(($dawnScore / $totalScore) * 1000);
 $twilPoint = ($totalScore == 0) ? 0 : round(($twilScore / $totalScore) * 1000);
 
-$date = $query['date'] - 1;
+$date = date("d", $query['date']) - 1;
 
 $gen  = 'var nthDay = ' . $date . ';'."\n";
 $gen .= 'var currTime = \'' . date('m/d/Y h:iA T') . '\';'."\n";
