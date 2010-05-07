@@ -9,7 +9,7 @@ $db_serv = 'localhost';			//the address of the database goes here
 $db_user = 'root';				//your sql username goes here
 $db_pass = '';					//your sql password goes here
 
-$db_name = 'l2jdb';				//your database name goes here
+$db_name = 'l2jdb_game';				//your database name goes here
 
 $filename = './world01.js';		//generated javascript file you need to put attribute 777 in your folder
 
@@ -28,7 +28,7 @@ $totalScore = $query['dawn_stone_score'] + $query['dusk_stone_score'] + $query['
 $dawnPoint = ($totalScore == 0) ? 0 : round(($dawnScore / $totalScore) * 1000);
 $twilPoint = ($totalScore == 0) ? 0 : round(($twilScore / $totalScore) * 1000);
 
-$date = date("d", $query['date']) - 1;
+$date = date("w", $query['date']);
 
 $gen  = 'var nthDay = ' . $date . ';'."\n";
 $gen .= 'var currTime = \'' . date('m/d/Y h:iA T') . '\';'."\n";
